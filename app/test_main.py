@@ -25,7 +25,7 @@ def test_response_parser():
     expect_response = {
         'location_name': 'Bogota, CO', 
         'temperature_celsius': '15.73 °C', 
-        'temperature_fahrenheit': '60.31 °K', 
+        'temperature_fahrenheit': '60.31 °F', 
         'wind': '4.12 m/s', 
         'weather': 'scattered clouds', 
         'pressure': '1017 hPa', 
