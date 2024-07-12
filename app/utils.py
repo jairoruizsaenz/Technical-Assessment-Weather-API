@@ -28,7 +28,7 @@ def response_parser(weather_api_response) -> dict:
     response = {}
     response['location_name'] = f"{weather_api_response['name']}, {weather_api_response['sys']['country']}"
     response['temperature_celsius'] = f"{weather_api_response['main']['temp']} °C"
-    response['temperature_fahrenheit'] = f"{celcius_to_fahrenheit(weather_api_response['main']['temp'])} °K"
+    response['temperature_fahrenheit'] = f"{celcius_to_fahrenheit(weather_api_response['main']['temp'])} °F"
     response['wind'] = f"{weather_api_response['wind']['speed']} m/s"
 
     response['weather'] = "No data"
