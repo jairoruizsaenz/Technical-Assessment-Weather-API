@@ -9,6 +9,29 @@ A Weather API that uses the [OpenWeather](https://openweathermap.org/) API to re
 
 You can try the API live by checking the weather for Bogota, Colombia using [this link](https://jairoruiz-weather-api.fly.dev/weather?city=Bogota&country=co). For more information, check the documentation [here](https://jairoruiz-weather-api.fly.dev/docs).
 
+## Example
+
+Requesting the information for Bogota, Colombia you should get a response similar to the following one:
+
+```bash
+GET /weather?city=Bogota&country=co
+```
+
+```bash
+{
+  "location_name": "Bogota, CO",
+  "temperature_celsius": "14.73 °C",
+  "temperature_fahrenheit": "58.51 °F",
+  "wind": "3.09 m/s",
+  "weather": "light rain",
+  "pressure": "1017 hPa",
+  "humidity": "82%",
+  "sunrise": "05:50 AM",
+  "sunset": "06:12 PM",
+  "geo_coordinates": "[4.61, -74.08]",
+  "requested_time": "12-07-2024 04:58:04 PM"
+}
+```
 
 ## Installation
 
