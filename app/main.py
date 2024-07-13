@@ -57,7 +57,7 @@ def home():
 def weather(response: Response, 
             city: Annotated[str, Query(description="Name of the city")], 
             country: Annotated[str, Query(description="Two characters country code in lowercase. Example: co", 
-                                          min_length=2,  max_length=2, pattern="[a-z]" )]):
+                                          min_length=2,  max_length=2, pattern="^[a-z]{2}$" )]):
     """
     Get the weather information for a city.
 
